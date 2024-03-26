@@ -24,7 +24,7 @@ public class ChampionsJdbcRepository implements ChampionsRepository {
                 rs.getString("name"),
                 rs.getString("role"),
                 rs.getString("lore"),
-                rs.getString("imageUrl"));
+                rs.getString("image_url"));
     }
 
     @Override
