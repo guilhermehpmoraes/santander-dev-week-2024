@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import me.dio.sdw24.domain.model.Champions;
+import me.dio.sdw24.domain.model.Champion;
 
 @SpringBootTest
 public class ListChampionsUseCaseIntegrationTest {
@@ -17,7 +17,7 @@ public class ListChampionsUseCaseIntegrationTest {
 
     @Test
     public void testListChampions() {
-        List<Champions> champions = listChampionsUseCase.findAll();
+        List<Champion> champions = listChampionsUseCase.findAll();
 
         Assertions.assertEquals(12, champions.size());
     }

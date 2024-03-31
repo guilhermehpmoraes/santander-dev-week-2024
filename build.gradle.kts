@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "me.dio"
-version = "0.0.1-SNAPSHOT"
+version = "0.0.3-SNAPSHOT"
 
 java {
 	sourceCompatibility = JavaVersion.VERSION_21
@@ -21,6 +21,7 @@ dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-data-jdbc")
 	implementation("org.springframework.boot:spring-boot-starter-web")
 	implementation("org.springframework.cloud:spring-cloud-starter-openfeign")
+	implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.4.0")
 	runtimeOnly("com.h2database:h2")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
