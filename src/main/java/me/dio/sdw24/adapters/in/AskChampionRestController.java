@@ -1,5 +1,6 @@
 package me.dio.sdw24.adapters.in;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,6 +15,7 @@ import me.dio.sdw24.application.AskChampionsUseCase;
 @RequestMapping("/champions")
 public record AskChampionRestController(AskChampionsUseCase useCase) {
 
+    @CrossOrigin
     @PostMapping("/{championId}/ask")
     public AskChampionResponse askChampion(@PathVariable("championId") Long championId,
             @RequestBody AskChampionRequest request) {
