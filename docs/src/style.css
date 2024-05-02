@@ -325,7 +325,7 @@ body {
   height: 10rem;
   width: 10rem;
   border-radius: 50%;
-  background-image: url("https://via.placeholder.com/550x320/171717/cccccc?text=550x320");
+  background-image: url("../assets/icone.ico");
   background-size: cover;
   background-position: top;
 }
